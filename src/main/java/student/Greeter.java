@@ -73,7 +73,7 @@ public class Greeter {
      * @return the name of the greeter
      */
     public String getName() {
-        return name
+        return name;
     }
 
     /**
@@ -189,14 +189,14 @@ public class Greeter {
      * @return the locality as a string
      */
     private String getLocalityString() {
-        if (locality < 1 || locality >= localityList.size()) {
+        if (locality < 1 || locality > localityList.size()) {
             return "USA";
         }
-        return localityList.get(locality);
+        return localityList.get(locality-1);
     }
 
     /**
-     * For new objects is is often a good idea to override the hashCode method.
+     * For new objects is often a good idea to override the hashCode method.
      *
      * HashCodes are used in various data structures (like hashtables) to provide a 'unique'
      * identifier for an object. In this case as long as the name and locality are the same, the

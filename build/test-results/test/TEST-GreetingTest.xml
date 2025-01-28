@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="GreetingTest" tests="7" skipped="0" failures="2" errors="0" timestamp="2025-01-28T05:56:04" hostname="aqdeMacBook-Air.local" time="0.206">
+  <properties/>
+  <testcase name="testGetFormatStr()" classname="GreetingTest" time="0.166">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;%s, 你好!&gt; but was: &lt;%%s, %s!&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;%s, 你好!&gt; but was: &lt;%%s, %s!&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at GreetingTest.testGetFormatStr(GreetingTest.java:80)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+</failure>
+  </testcase>
+  <testcase name="testGetLocalityID()" classname="GreetingTest" time="0.002"/>
+  <testcase name="testGreet()" classname="GreetingTest" time="0.007">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;Hello, John!&gt; but was: &lt;John, %s!&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;Hello, John!&gt; but was: &lt;John, %s!&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at GreetingTest.testGreet(GreetingTest.java:101)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+</failure>
+  </testcase>
+  <testcase name="testToString()" classname="GreetingTest" time="0.004"/>
+  <testcase name="testGetUnicodeGreeting()" classname="GreetingTest" time="0.002"/>
+  <testcase name="testGetAsciiGreeting()" classname="GreetingTest" time="0.003"/>
+  <testcase name="testGetLocalityName()" classname="GreetingTest" time="0.002"/>
+  <system-out><![CDATA[%%s, %s!
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
